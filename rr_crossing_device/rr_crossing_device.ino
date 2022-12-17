@@ -89,7 +89,7 @@ void loop(){
       sensorValue[x] = newValue[x];
    }
 
-   if ( (millis() - lastSend) > 1000 ) send = 1;
+   if ( (millis() - lastSend) > 200 ) send = 1;
 
    if (send) {
       sprintf(txBuffer,"Status %i %i %i %i\n",sensorValue[0],sensorValue[1],sensorValue[2],sensorValue[3]);
