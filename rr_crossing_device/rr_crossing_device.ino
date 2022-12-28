@@ -16,10 +16,12 @@ const unsigned int LedCnt   = 4;
 const unsigned long LedPeriod = 250;
 const unsigned int LedPin[LedCnt] = {4, 5, 6, 7};
 
+// First Number is closer to city
+
 const unsigned int ServoCnt = 2;
 const unsigned int ServoPin[ServoCnt] = {9, 10};
 const unsigned int ServoUp[ServoCnt] = {120,120};
-const unsigned int ServoDown[ServoCnt] = {85,82};
+const unsigned int ServoDown[ServoCnt] = {95,82};
 
 unsigned int x;
 unsigned long currTime;
